@@ -22,24 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
         defaultDate: '21.10.2021, 10:55'
     })
 
-    document.addEventListener( 'keyup', event => {
-        if( event.code === 'Enter' ) {
-            let getAt = new Date(document.getElementById('date-at').value).toLocaleString();
-            console.log(getAt);
-            // let dateDiff = getNow - getAt
-            // console.log(dateDiff);
-        }
-    });
-
-    document.addEventListener( 'keyup', event => {
-        if( event.code === 'Enter' ) {
-            let getNow = new Date(document.getElementById('date-now').value).toLocaleString();
-            console.log(getNow);
-            // let dateDiff = getNow - getAt
-            // console.log(dateDiff);
-        }
-    });
-
 
     workHow.addEventListener('click', () => {
         const dateTime = document.querySelector('.date-time')

@@ -577,3 +577,14 @@ ul {
     height: 20px;
 }
 
+
+.error-body > h1 {
+    margin-left: 45%;
+    margin-right: 45%;
+    width: 200px;
+}
+
+.error-a {
+    display: flex;
+    justify-content: center;
+}
