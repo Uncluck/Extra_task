@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="analytics-script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <link href="../public/style.css" rel="stylesheet">
+    <title>Title</title>
+</head>
+<body>
+<header>
+    <nav class="main-nav">
+        <div class="logo">
+            <img src="../image/new_logo.png" alt="logotype">
+        </div>
+        <ul class="site-navigation">
+            <li class="site-navigation-item" id="main">
+                <a href="main.html">Главная</a>
+            </li>
+            <li class="site-navigation-item" id="analytics">
+                <a href="analytics.html">Аналитика</a>
+            </li>
+        </ul>
+        <div class="login">
+            <a href="#">
+                <img src="../image/ava.png" alt="login">
+            </a>
+        </div>
+    </nav>
+</header>
+<main class="analytic">
+    <section class="card-data">
+        <div class="head-card">
+            <div class="logotype">
+                <img src="#" alt="">
+            </div>
+            <div class="full-name">
+                <div>pH-метр, Mettler Toledo, SevenCompact S220, 00-003054</div>
+                <div class="other-info">
+                    <div>S1.4.I14-9.001</div>
+                    <div>*</div>
+                    <div>00-024004</div>
+                </div>
+            </div>
+            <div class="action">
+                <button class="button-work">
+                    В работе
+                    <img src="/image/arrow_drop_down_24px.png" alt="arrow_down">
+                </button>
+<!--                Две картинки ниже можно сделать без button, но мб буду навешивать логику-->
+                <button class="button-img">
+                    <img src="../image/like_red.png" alt="like" id="favorite" onclick="changeIconFavorite(this.id)">
+                </button>
+                <button class="button-img">
+                    <img src="../image/settings.svg" alt="settings">
+                </button>
+            </div>
+        </div>
+        <div class="select-action">
+            <button class="button-work-how">
+                <p>Работа прибора</p>
+                <span class="material-symbols-outlined hidden">
+                    arrow_drop_up
+                </span>
+                <img src="/image/arrow_drop_down_24px.png" alt="arrow_down">
+            </button>
+            <div class="safe-btn">
+                <button class="time-icon">
+                    <img src="../image/btn.png" alt="watch">
+                </button>
+                <div class="safe-pdf">
+                    <button class="safe-pdf-btn">Сохранить в pdf</button>
+                    <button class="safe-pdf-btn-img">
+                        <img src="../image/Divider_vertical.png" alt="">
+                        <img src="../image/icon_safe.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="date-time">
+            <input type="text" class="date-time-at" id="date-at"/>
+            <img src="../image/trailing_Icon.png" alt="">
+            <input type="text" class="date-time-now" id="date-now"/>
+        </div>
+        <div class="time-chips">
+            <div>День</div>
+            <div>Неделя</div>
+            <div>2 недели</div>
+            <div>Месяц</div>
+            <div>2 месяца</div>
+            <div>Полгода</div>
+        </div>
+        <table class="table-card">
+            <tr class="header-table">
+                <th class="duration">
+                    <div>Начало</div>
+                </th>
+                <th class="type">
+                    <div>Тип работ</div>
+                </th>
+                <th class="jobs">
+                    <div>Работы</div>
+                </th>
+                <th class="result">
+                    <div>Результат</div>
+                </th>
+                <th class="user">
+                    <div>Пользователь</div>
+                </th>
+            </tr>
+            <tr class="table-rows">
+                <td>
+                    <div class="table-time">
+                        09.10.2021, 15:46
+                    </div>
+                </td>
+                <td>
+                    <div class="table-type-work">В работе</div>
+                    <div style="height: 80px">Измерение</div>
+                </td>
+                <td>
+                    <div class="table-work">
+                        <span>Образец/серия:</span>000100057935_170000010325_0000251849
+                    </div>
+                </td>
+                <td>
+                    <div class="table-result">
+                        <div></div>
+                        <img src="../image/check.svg" alt="">
+                    </div>
+                </td>
+                <td>
+                    <div class="table-user">morozovava</div>
+                </td>
+            </tr>
+            <tr class="table-rows">
+                <td>
+                    <div class="table-time">
+                        12.10.2021, 12:17
+                    </div>
+                </td>
+                <td>
+                    <div class="table-type-work">В работе</div>
+                    <div style="height: 80px">Измерение</div>
+                </td>
+                <td>
+                    <ul>
+                        <li><span>Номер колонки:</span> Колонка 2</li>
+                        <li><span>Образец:</span> Образец 2</li>
+                        <li><span>Образец:</span> образец 1</li>
+                        <li><span>Метод:</span> метров тестовый</li>
+                        <li><span>Номер колонки:</span> Колонка 1</li>
+                    </ul>
+                </td>
+                <td>
+                    <div class="table-result">
+                        <div>Промывка с указанием вещества: Вещество</div>
+                        <img src="../image/check.svg" alt="">
+                    </div>
+                </td>
+                <td>
+                    <div class="table-user">morozovava</div>
+                </td>
+            </tr>
+        </table>
+    </section>
+</main>
+</body>
+</html>
